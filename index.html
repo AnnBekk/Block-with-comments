@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Комментарии</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width">
+	</head>
+
+	<body>
+		<div class="wrapper">
+
+			<div class="comments" id="comments"></div>
+
+			<form class="add_comments">
+				<fieldset>
+	  				<legend>Добавление комментария</legend>
+				    <table>
+				    	<tr class="add_comments__title">
+					        <td>Имя: <br>
+					        	<input name="userName" id="userName">
+					        	<div id="error"></div>
+					        </td>
+
+					        <td>Дата: <br>
+					        	<input type="date" name="commentDate">
+					        </td>
+				    	</tr>
+				    	<tr>
+				    		<td >Введите комментарий: <br>
+				    			<textarea name="comment" class="add_comments__input"> </textarea> 
+				    		</td>
+				    	</tr>
+				    </table>
+				</fieldset>
+			    <input type="submit" value="Отправить" class="add_comments__submit">
+			</form>
+
+			<fieldset class="comments_list">
+				<legend>Комментарии</legend>
+				<div class="comments_list__comment">
+					<div class="comments_list__info"> MyName Date</div>
+					<div class="comments_list__text"> Текст комментария</div>
+				</div>
+			</fieldset>
+
+
+		</div>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>

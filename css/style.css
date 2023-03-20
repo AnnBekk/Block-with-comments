@@ -20,7 +20,7 @@ fieldset {
 	border-color: red; 
 }
 
-#error { 
+#error, #error_comment  { 
 	color: red;
 }
 
@@ -49,9 +49,37 @@ fieldset {
 }
 
 .comments_list__comment {
+	position: relative;
 	background-color:rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	margin: 5px 0 5px 0;
 }
 
 .comments_list__info {
-	font: bold 110% serif;  
+	font: 100% serif;  
+}
+
+.comments_list__text {
+	top: 5px;
+}
+.remove_button {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	right: 10px;
+	top: 5px;
+	cursor: pointer;
+	background: url("../img/garbage.png") 0 0/contain no-repeat;
+	border: none;
+}
+
+.like_button {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	right: 30px;
+	top: 5px;
+	cursor: pointer;
+	background: url("../img/unlike.png") 0 0/contain no-repeat;
+	border: none;	
 }
